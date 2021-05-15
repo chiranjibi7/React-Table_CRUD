@@ -79,7 +79,7 @@ const AddUserDataForm = () => {
             onChange={(e) => inputChangeHandler(e)}
           />
           <Text color="red" mb="10px">
-            {simpleValidator.current.message("name", name, "required|alpha")}
+            {simpleValidator.current.message("name", name, "required")}
           </Text>
 
           <FormLabel htmlFor="email">Email address</FormLabel>

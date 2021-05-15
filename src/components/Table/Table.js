@@ -11,6 +11,13 @@ import {
   Box,
   Text,
   IconButton,
+  Popover,
+  PopoverTrigger,
+  PopoverContent,
+  PopoverHeader,
+  PopoverBody,
+  PopoverArrow,
+  PopoverCloseButton
 } from "@chakra-ui/react";
 import {ArrowDownIcon, ArrowUpIcon} from "@chakra-ui/icons";
 import AlertDialogBox from "./AlertDialogue";
@@ -82,9 +89,21 @@ const TableData = () => {
         </Tbody>
       ))}
     </Table>
+    <HStack>
     <Link to="/userprofiles" >
       <Button marginX="20px" size="md" colorScheme="teal">PRROFILES</Button>
     </Link>
+    <Popover>
+          <PopoverTrigger>
+            <Button size="md" colorScheme="twitter">TOTAL USERS</Button>
+          </PopoverTrigger>
+          <PopoverContent>
+            <PopoverArrow />
+            <PopoverCloseButton />
+            <PopoverBody>{userData.length} Users</PopoverBody>
+          </PopoverContent>
+        </Popover>
+        </HStack>
     </Box>
   );
 };

@@ -8,7 +8,7 @@ import {
     DrawerCloseButton,
     Button,
     useDisclosure,
-    Center
+    Center,
   } from "@chakra-ui/react";
 import AddUserDataForm from './AddUserDataForm';
 
@@ -20,10 +20,11 @@ const DrawerForm = () => {
   return (
     <>
     <Center>
-      <Button mt="20px" w="150px" ref={btnRef} colorScheme="teal" onClick={onOpen}>
-        ADD USER
-      </Button>
+        <Button mt="20px" w="150px" ref={btnRef} colorScheme="teal" onClick={onOpen}>
+          ADD USER
+        </Button>
     </Center>
+
       <Drawer
         isOpen={isOpen}
         placement="right"
