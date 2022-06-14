@@ -91,7 +91,7 @@ const TableData = () => {
     </Table>
     <HStack>
     <Link to="/userprofiles" >
-      <Button marginX="20px" size="md" colorScheme="teal">PRROFILES</Button>
+      <Button marginX="20px" size="md" colorScheme="teal">PROFILES</Button>
     </Link>
     <Popover>
           <PopoverTrigger>
